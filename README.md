@@ -4,6 +4,7 @@ Pediu para criarmos um seletor de variantes na página de produto.
 Mas a seguinte estrutura de dados não funciona bem para o desenvolvimento de um seletor de variantes.
 
 Estrutura atual:
+```php
 [
     'azul-XG',
     'branco-PP',
@@ -18,8 +19,11 @@ Estrutura atual:
     'preto-GG', 
     'azul-XG', 
 ]
+```
 
 Precisamos que essa estrutura seja convertida para o seguinte formato.
+
+```php
 [
     'preto' =>  [
         'PP' => 1,
@@ -39,3 +43,4 @@ Precisamos que essa estrutura seja convertida para o seguinte formato.
         'P' => 1
     ]
 ]
+```
